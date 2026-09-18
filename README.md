@@ -165,3 +165,31 @@ The generated APK is located at:
 ```text
 app/build/outputs/apk/debug/app-debug.apk
 ```
+
+### Build and install the APK from the Android terminal
+
+Build the debug APK with:
+
+```bash
+./gradlew assembleDebug
+```
+
+Then enter the APK output directory:
+
+```bash
+cd app/build/outputs/apk/debug
+```
+
+Start a local HTTP server:
+
+```bash
+busybox httpd -f -p 8080
+```
+
+While the server is running, open the following address in the Android browser:
+
+```text
+http://localhost:8080/app-debug.apk
+```
+
+The APK can then be downloaded and installed directly on the Android device.
