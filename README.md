@@ -126,3 +126,42 @@ original Samsung application.
 This project is released under the MIT License.
 
 See `LICENSE` for details.
+
+## Development Environment
+
+This project was developed and built entirely on an Android phone using AndroidIDE.
+
+No desktop computer was required to develop or build the application.
+
+### Development device
+
+- Device: Motorola Moto G52
+- Android: Android 13
+- Architecture: ARM64
+- IDE: AndroidIDE
+
+### Build environment
+
+- Gradle: 7.5
+- Android Gradle Plugin: 7.4.2
+- JDK: OpenJDK 11.0.28 (Temurin)
+- compileSdkVersion: 35
+- targetSdkVersion: 35
+- minSdkVersion: 26
+- Java source compatibility: Java 8
+- Java target compatibility: Java 8
+
+### Build the APK
+
+From the project root, run:
+
+```bash
+./gradlew clean
+./gradlew assembleDebug
+```
+
+The generated APK is located at:
+
+```text
+app/build/outputs/apk/debug/app-debug.apk
+```
